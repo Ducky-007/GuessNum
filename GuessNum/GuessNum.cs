@@ -42,9 +42,14 @@ namespace MyProgram
                     guess = Convert.ToInt32(Console.ReadLine());
                 }
             }
+            if (guessCount == 1) // if user guesses the correct number on thier first guess
+            {
+                System.Console.WriteLine($"You guessed the correct number: {answer} in only {guessCount} attempt");
+                System.Console.WriteLine("LUCKY YOU!!!");
+            }
             guessCount++; // add to count as correct answer is still an attempt
             System.Console.WriteLine($"You guessed the correct number: {answer}");
-            System.Console.WriteLine($"It took you {guessCount} attempts!!!");
+            System.Console.WriteLine($"It took you only {guessCount} attempts!!!");
         }
 
     }
