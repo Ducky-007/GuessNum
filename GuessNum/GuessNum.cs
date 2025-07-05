@@ -49,22 +49,25 @@ namespace MyProgram
                     }
                     guessCount++; // add to total guesses
                 }
-                guessCount++; // add to count as correct answer is still an attempt
-                System.Console.WriteLine($"You guessed the correct number: {answer}");
-                System.Console.WriteLine($"It took you only {guessCount} attempts!!!");
-
-                System.Console.Write("Play again? (Y/N): ");
-                repsonse = Console.ReadLine().ToUpper();
-                if (repsonse == "Y")
+                // if user guess correctly on thier first guess
+                if (guessCount == 1)
                 {
-                    playAgain = true;
+                    System.Console.WriteLine($"You guessed the correct number {answer} in only {guessCount} guess!!");
+                    System.Console.WriteLine("Very impressive and LUCKY YOU!!!");
                 }
                 else
+                {
+                    System.Console.WriteLine($"You guessed the correct number: {answer}");
+                    System.Console.WriteLine($"It took you only {guessCount} attempts!!!");                    
+                }
+                System.Console.Write("Play again? (Y/N): ");
+                repsonse = Console.ReadLine().ToUpper();
+                if (repsonse != "Y")
                 {
                     playAgain = false;
                 }
             }
-            System.Console.WriteLine("Thanks for playing!!");
+            System.Console.WriteLine("Thanks for playing!!! Until next time! I guess...");
         }
 
     }
