@@ -20,36 +20,51 @@ namespace MyProgram
         public void GuessNum()
         {
             Random random = new Random(); // create random object
-            int answer = random.Next(1, 101); // range from 1 - 100
-            System.Console.Write("Guess a number from 1 - 100: "); // guide user to input a number
-            int guess = Convert.ToInt32(Console.ReadLine()); // convert input to interval
-            int guessCount = 1; // will output total attempts once correct number is guessed
-            
+            int min = 1;
+            int max = 100;
+            int guess;
+            int guessCount; // will output total attempts once correct number is guessed
+            bool playAgain = true; // for if the user wants to play again after finishing one game
+            string repsonse; // will determine if program ends or another game begins
 
-            while (guess != answer) // to keep the game going until the correct number is guessed
+
+            while (playAgain)
             {
-                guessCount++; // add to total guesses
-                if (guess < answer) // for when the guess is lower than the answer
+                guess = 0;
+                guessCount = 0;
+                int answer = random.Next(min, max + 1); // range from min to max + 1 to be inclusive
+
+                while (guess != answer) // to keep the game going until the correct number is guessed
                 {
-                    System.Console.WriteLine("Guess was too low!");
-                    System.Console.Write("Guess again: "); // guide the user to enter another number
+                    System.Console.Write($"Guess a number between {min} - {max}: ");
                     guess = Convert.ToInt32(Console.ReadLine());
+                    System.Console.WriteLine($"You guessed: {guess}");
+                    if (guess < answer) // for when the guess is lower than the answer
+                    {
+                        System.Console.WriteLine($"{guess} was too low!");
+                    }
+                    else if (guess > answer) // for when the guess is higher than the answer
+                    {
+                        System.Console.WriteLine($"{guess} was too high!");
+                    }
+                    guessCount++; // add to total guesses
                 }
-                if (guess > answer) // for when the guess is higher than the answer
+                guessCount++; // add to count as correct answer is still an attempt
+                System.Console.WriteLine($"You guessed the correct number: {answer}");
+                System.Console.WriteLine($"It took you only {guessCount} attempts!!!");
+
+                System.Console.Write("Play again? (Y/N): ");
+                repsonse = Console.ReadLine().ToUpper();
+                if (repsonse == "Y")
                 {
-                    System.Console.WriteLine("Guess was too high!");
-                    System.Console.Write("Guess again: ");
-                    guess = Convert.ToInt32(Console.ReadLine());
+                    playAgain = true;
+                }
+                else
+                {
+                    playAgain = false;
                 }
             }
-            if (guessCount == 1) // if user guesses the correct number on thier first guess
-            {
-                System.Console.WriteLine($"You guessed the correct number: {answer} in only {guessCount} attempt");
-                System.Console.WriteLine("LUCKY YOU!!!");
-            }
-            guessCount++; // add to count as correct answer is still an attempt
-            System.Console.WriteLine($"You guessed the correct number: {answer}");
-            System.Console.WriteLine($"It took you only {guessCount} attempts!!!");
+            System.Console.WriteLine("Thanks for playing!!!");
         }
 
     }
