@@ -64,7 +64,7 @@ namespace MyProgram
                     playAgain = false;
                 }
             }
-            System.Console.WriteLine("Thanks for playing!!!");
+            System.Console.WriteLine("Thanks for playing!!");
         }
 
     }
