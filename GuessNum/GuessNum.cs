@@ -60,15 +60,15 @@ namespace MyProgram
                     System.Console.WriteLine($"You guessed the correct number: {answer}");
                     System.Console.WriteLine($"It took you only {guessCount} attempts!!!");                    
                 }
-                System.Console.Write("Play again? (Y/N): ");
-                repsonse = Console.ReadLine().ToUpper();
+                System.Console.Write("Play again? (Y/N): "); // asks user to play again
+                repsonse = Console.ReadLine().ToUpper(); // changes input to upper in case user enters "y"
                 if (repsonse != "Y")
                 {
-                    playAgain = false;
+                    playAgain = false; // flag as false to quit progam
                 }
             }
-            System.Console.WriteLine("Thanks for playing!!! Until next time! I guess...");
+            System.Console.WriteLine("Quitting program........."); // goodbye message confirming exiting of program 
+            System.Console.WriteLine("Thanks for playing!!! Until next time! I guess..."); 
         }
-
     }
 }
