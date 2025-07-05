@@ -23,10 +23,12 @@ namespace MyProgram
             int answer = random.Next(1, 101); // range from 1 - 100
             System.Console.Write("Guess a number from 1 - 100: "); // guide user to input a number
             int guess = Convert.ToInt32(Console.ReadLine()); // convert input to interval
+            int guessCount = 1; // will output total attempts once correct number is guessed
             
 
             while (guess != answer) // to keep the game going until the correct number is guessed
             {
+                guessCount++; // add to total guesses
                 if (guess < answer) // for when the guess is lower than the answer
                 {
                     System.Console.WriteLine("Guess was too low!");
@@ -40,7 +42,9 @@ namespace MyProgram
                     guess = Convert.ToInt32(Console.ReadLine());
                 }
             }
-            System.Console.WriteLine($"You guessed the correct number: {answer}\nCongrats to you!!!");
+            guessCount++; // add to count as correct answer is still an attempt
+            System.Console.WriteLine($"You guessed the correct number: {answer}");
+            System.Console.WriteLine($"It took you {guessCount} attempts!!!");
         }
 
     }

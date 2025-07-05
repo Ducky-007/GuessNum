@@ -1,0 +1,15 @@
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/bin/Debug/net8.0/GuessNum
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/bin/Debug/net8.0/GuessNum.deps.json
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/bin/Debug/net8.0/GuessNum.runtimeconfig.json
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/bin/Debug/net8.0/GuessNum.dll
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/bin/Debug/net8.0/GuessNum.pdb
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/obj/Debug/net8.0/GuessNum.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/obj/Debug/net8.0/GuessNum.AssemblyInfoInputs.cache
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/obj/Debug/net8.0/GuessNum.AssemblyInfo.cs
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/obj/Debug/net8.0/GuessNum.csproj.CoreCompileInputs.cache
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/obj/Debug/net8.0/GuessNum.sourcelink.json
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/obj/Debug/net8.0/GuessNum.dll
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/obj/Debug/net8.0/refint/GuessNum.dll
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/obj/Debug/net8.0/GuessNum.pdb
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/obj/Debug/net8.0/GuessNum.genruntimeconfig.cache
+/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/obj/Debug/net8.0/ref/GuessNum.dll

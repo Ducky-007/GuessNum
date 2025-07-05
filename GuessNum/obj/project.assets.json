@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cameron/Desktop/C#/LearningRoot/Learning/Learning.csproj",
-      "projectName": "Learning",
-      "projectPath": "/Users/cameron/Desktop/C#/LearningRoot/Learning/Learning.csproj",
+      "projectUniqueName": "/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/GuessNum.csproj",
+      "projectName": "GuessNum",
+      "projectPath": "/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/GuessNum.csproj",
       "packagesPath": "/Users/cameron/.nuget/packages/",
-      "outputPath": "/Users/cameron/Desktop/C#/LearningRoot/Learning/obj/",
+      "outputPath": "/Users/cameron/Desktop/C#/GuessNumRoot/GuessNum/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/cameron/.nuget/NuGet/NuGet.Config"
